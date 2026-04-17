@@ -1,0 +1,16 @@
+Partea de Compulsory, am scris scriptul SQL pentru a crea tabelele necesare.
+Apoi am realizat o conexiune de baza folosind JDBC si am implementat pattern-ul DAO pentru clasa Genre (ajutatoare clasei db), astfel incat
+sa pot adauga si citi genuri de filme direct din codul Java.
+
+Pentru partea de Homework, am inlocuit conexiunea simpla cu un connection pool numit HikariCP,
+care imbunatateste considerabil viteza aplicatiei prin reciclarea conexiunilor. De asemenea, am adaugat
+clasele si DAO-urile necesare pentru actori si filme. O realizare importanta aici a fost crearea unui generator
+de rapoarte care extrage automat toate datele din baza si construieste un fisier HTML, oferind o pagina web simpla 
+unde colectia de filme este afisata intr-un tabel.
+
+In cele din urma, la nivelul Advanced, am vrut sa fac aplicatia sa semene cu una reala prin automatizarea
+introducerii datelor. In loc sa scriu filmele manual in cod, am creat un fisier extern de tip CSV continand 
+date reale. Am construit apoi o clasa speciala numita DataImporter care citeste acest fisier linie cu linie, 
+il decodifica si trimite informatiile catre baza de date folosind arhitectura deja creata. La final, intregul 
+flux functioneaza perfect si fara erori, preluand datele din fisier, salvandu-le rapid in baza prin pool-ul de
+conexiuni si afisandu-le imediat in raportul HTML.
