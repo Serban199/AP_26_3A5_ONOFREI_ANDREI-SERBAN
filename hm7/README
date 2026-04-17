@@ -1,0 +1,10 @@
+Pentru laboratorul asta am facut un API in Spring Boot ca sa gestionez o baza de date cu filme.
+M-am lovit din prima de o eroare pentru ca portul 8080 era deja ocupat de altceva, asa ca l-am schimbat la 8081 din aplicatie.
+
+Dupa aia, am facut clasa Movie si am legat-o la o baza de date H2 in memorie. Partea principala a 
+fost la controller, unde am facut rutele de CRUD. Am folosit GET ca sa afisez filmele, POST ca sa adaug 
+altele noi, PUT si PATCH ca sa le modific si un DELETE ca sa le pot sterge. Am pus si un exception handler 
+global ca sa dea mesaje de eroare mai clare in loc sa crape urat.
+
+La final, am testat totul in Postman. Am facut request-uri cu JSON pentru fiecare metoda si am verificat
+ca datele chiar se salveaza si se sterg din baza de date. 
