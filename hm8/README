@@ -1,0 +1,10 @@
+HM:
+Aplicatia genereaza o grila in care poti sterge aleatoriu pereti pentru a crea un labirint.
+Ai posibilitatea sa editezi manual (cu click pe pereti) traseul, sa verifici printr-un algoritm
+(BFS) daca exista un drum valid de la start la finish,poti mofifica dimensiunea si sa salvezi sau exporti vizual rezultatul.
+
+Advanced:
+Inlocuieste generarea aleatorie cu un algoritm inteligent (Recursive Backtracking/DFS) care creeaza intotdeauna 
+un labirint perfect, cu un drum unic si fara zone izolate. Mai mult, algoritmul afiseaza procesul de formare 
+in timp real, ca pe o animatie a carei viteza o poti controla printr-un slider. Pastreaza si toate functiile de
+salvare, export si validare din prima varianta.`
