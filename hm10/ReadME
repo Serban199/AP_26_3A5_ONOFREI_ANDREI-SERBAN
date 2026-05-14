@@ -1,0 +1,1 @@
+Acesta este un proiect java de baza folosind arhitectura client-server, implementat cu ajutorul socket-urilor. Aplicatia permite conectarea simultana a mai multor clienti la un singur server de joc, am comanda de stop de deconectare a serverului si exit pt client. 
